@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVIEW</title>
+    <script src="https://kit.fontawesome.com/7d040dbe03.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="reviews">
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="">TOURLY</a></div>
+            <ul class="links">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="packages.html">PACKAGES</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="review.html">REVIEW</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>    
+            <a href="#" class="action_btn">BOOK NOW</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    
+        <div class="dropdown_menu">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="packages.html">PACKAGES</a></li>
+            <li><a href="services.html">SERVICE</a></li>
+            <li><a href="review.html">REVIEW</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li><a href="#" class="action_btn">BOOK NOW</a></li>
+    
+        </div>
+       </header>
+    <section class="review" id="review">
+        <h1 class="heading">
+            <span>R</span>
+            <span>E</span>
+            <span>V</span>
+            <span>I</span>
+            <span>E</span>
+            <span>W</span>
+        </h1>
+        <div class="slider">
+            <div class="box">
+               
+                <h3>JOHN DEO</h3>
+                <p>One of my relatives booked an Europe trip 3 years ago with Veena world. Unfortunately, the trip was cancelled by Veena World due to Covid-19 outbreak. After taking the complete booking amount, Veena world promised to plan them in the next tour once the tour resumes. </p>
+            
+            </div>
+
+            <div class="box">
+                
+                <h3>MARY</h3>
+                <p>Had a very great experience as always . being solo female traveller always trustworthy.From day one from enquiry Ayush were personally connected with me till last day of trip.It was indeed great experience all together and over and over again my choice will remain same.</p>
+                
+            </div>
+
+            <div class="box">
+
+                <h3>VICKY</h3>
+                <p>Very helpful all the way through. Quick response to queries and very polite. I don't know that you can improve we were very happy with your service. Everything ran smoothly from the word go. We had a wonderful holiday. Thank you. Yes I would recommend you.</p>
+                
+            </div>
+
+            <div class="box">
+             
+                <h3>PRIYA</h3>
+                <p>Staff are super efficient, picked up an error regarding travel and hotel check in and emailed me options, so good.Everything went smoothly as planned, second time we used TravelOnline great special offers that's what I like value for money with great service.</p>
+                
+            </div>
+
+            <div class="box">
+               
+                <h3>RAHUL</h3>
+                <p>Can't think of anything you need to improve. I have found it very simple and easy to book through your sight and will definitely do so again. I wouldn't hesitate to recommend to friends and family.</p>
+                
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </section>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+     
+        toggleBtn.onclick = function () {
+         dropDownMenu.classList.toggle('open')
+         const isOpen = dropDownMenu.classList.contains('open')
+     
+         toggleBtnIcon.classList = isOpen
+         ? 'fa-solid fa-xmark'
+         : 'fa-solid fa-bars'
+        }
+     
+     </script>
+    
+</body>
+</html>

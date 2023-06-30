@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVICES</title>
+    <script src="https://kit.fontawesome.com/7d040dbe03.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="services">
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="">TOURLY</a></div>
+            <ul class="links">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="packages.html">PACKAGES</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="review.html">REVIEW</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+               
+            </ul>    
+            <a href="#" class="action_btn">BOOK NOW</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    
+        <div class="dropdown_menu">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="packages.html">PACKAGES</a></li>
+            <li><a href="services.html">SERVICE</a></li>
+            <li><a href="review.html">REVIEW</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li><a href="#" class="action_btn">BOOK NOW</a></li>
+    
+        </div>
+       </header>
+    <section class="services" id="services">
+        <h1 class="heading">
+            <span>S</span>
+            <span>E</span>
+            <span>R</span>
+            <span>V</span>
+            <span>I</span>
+            <span>C</span>
+            <span>E</span>
+            <span>S</span>
+        </h1>
+        <div class="box-container">
+           <div class="box">
+            <i class="fa-solid fa-hotel"></i>
+            <h3>Affordable Hotels</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi unde delectus, voluptatibus ut obcaecati tempore, tempora quas blanditiis eligendi ea quae dolor, qui debitis nisi nulla est nesciunt nobis dicta.</p>
+           </div>
+
+           <div class="box">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Food and drinks</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi unde delectus, voluptatibus ut obcaecati tempore, tempora quas blanditiis eligendi ea quae dolor, qui debitis nisi nulla est nesciunt nobis dicta.</p>
+           </div>
+
+
+           <div class="box">
+            <i class="fa-solid fa-bullhorn"></i>
+            <h3>Safety guide</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi unde delectus, voluptatibus ut obcaecati tempore, tempora quas blanditiis eligendi ea quae dolor, qui debitis nisi nulla est nesciunt nobis dicta.</p>
+           </div>
+
+
+           <div class="box">
+            <i class="fa-solid fa-earth-asia"></i>
+            <h3>Around the world</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi unde delectus, voluptatibus ut obcaecati tempore, tempora quas blanditiis eligendi ea quae dolor, qui debitis nisi nulla est nesciunt nobis dicta.</p>
+           </div>
+
+           <div class="box">
+            <i class="fa-solid fa-plane"></i>
+            <h3>Fastest travel</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi unde delectus, voluptatibus ut obcaecati tempore, tempora quas blanditiis eligendi ea quae dolor, qui debitis nisi nulla est nesciunt nobis dicta.</p>
+           </div>
+
+           <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>Adventures</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi unde delectus, voluptatibus ut obcaecati tempore, tempora quas blanditiis eligendi ea quae dolor, qui debitis nisi nulla est nesciunt nobis dicta.</p>
+           </div>
+
+
+
+
+        </div>
+    </section>  
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+     
+        toggleBtn.onclick = function () {
+         dropDownMenu.classList.toggle('open')
+         const isOpen = dropDownMenu.classList.contains('open')
+     
+         toggleBtnIcon.classList = isOpen
+         ? 'fa-solid fa-xmark'
+         : 'fa-solid fa-bars'
+        }
+     
+     </script>         
+</body>
+</html>

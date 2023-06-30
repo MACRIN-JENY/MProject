@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7d040dbe03.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>CONTACT</title>
+</head>
+<body class="contacts">
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="">TOURLY</a></div>
+            <ul class="links">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="packages.html">PACKAGES</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="review.html">REVIEW</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="form.html">LOGIN</a></li>
+            </ul>    
+            <a href="#" class="action_btn">BOOK NOW</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    
+        <div class="dropdown_menu">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="packages.html">PACKAGES</a></li>
+            <li><a href="services.html">SERVICE</a></li>
+            <li><a href="review.html">REVIEW</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li><a href="#" class="action_btn">BOOK NOW</a></li>
+    
+        </div>
+    </header>
+    <section class="contact">
+        <h1 class="heading">
+            <span>C</span>
+            <span>O</span>
+            <span>N</span>
+            <span>T</span>
+            <span>A</span>
+            <span>C</span>
+            <span>T</span>
+        </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="./contactpic .jpg" alt="">
+            </div>
+
+            <form action="">
+                <div class="inputBox">
+                    <input type="text" placeholder="name">
+                    <input type="email" placeholder="email">
+                </div>
+                <div class="inputBox">
+                    <input type="number" placeholder="number">
+                    <input type="text" placeholder="subject">
+                    </div>
+                <textarea placeholder="message" id="" cols="30" rows="10"></textarea>
+                <input type="submit" class="btn" value="send message">
+        </div>
+            </form>
+    </div>
+</section>
+<script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+ 
+    toggleBtn.onclick = function () {
+     dropDownMenu.classList.toggle('open')
+     const isOpen = dropDownMenu.classList.contains('open')
+ 
+     toggleBtnIcon.classList = isOpen
+     ? 'fa-solid fa-xmark'
+     : 'fa-solid fa-bars'
+    }
+ 
+ </script>
+    
+</body>
+</html>
